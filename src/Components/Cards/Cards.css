@@ -1,0 +1,47 @@
+.card-main {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+
+@keyframes gradientChange {
+  0% {
+    background: linear-gradient(to right, red, purple);
+  }
+  33% {
+    background: linear-gradient(to right, yellow, green);
+  }
+  60% {
+    background: linear-gradient(to right, red, purple);
+  }
+
+  100% {
+    background: linear-gradient(to right, yellow, green);
+  }
+}
+
+.card-border {
+  max-width: 250px;
+  height: 403px;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+  animation: gradientChange 6s infinite;
+}
+
+.card {
+  background: black;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card > img {
+  width: 200px;
+  margin: 10px auto;
+}
